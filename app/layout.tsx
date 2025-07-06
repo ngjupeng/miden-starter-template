@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Miden Playground",
-  description: "A modern wallet interface for the Miden blockchain",
+  title: "Miden Starter Template",
+  description: "A starter template for building dApps on the Miden blockchain",
   icons: {
     icon: "/favicon.ico",
   },
