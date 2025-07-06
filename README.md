@@ -7,14 +7,15 @@ A starter template for building dApps on the [Miden](https://miden.xyz/) blockch
 ## Quick Start
 
 1. Git clone `https://github.com/ngjupeng/miden-starter-template.git`
-2. **Install dependencies:**
+2. Run `cp .env.example .env`
+3. **Install dependencies:**
 
    ```bash
    pnpm install
 
    ```
 
-3. **Run the dev server:**
+4. **Run the dev server:**
    ```bash
    pnpm run dev
    ```
