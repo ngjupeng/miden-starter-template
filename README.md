@@ -23,9 +23,12 @@ A starter template for building dApps on the [Miden](https://miden.xyz/) blockch
 
 ## Project Structure
 
-- `/hooks/` — React hooks for account, assets etc.
-- `/utils/` — Utility functions for account, note, faucet, and more.
+- `/hooks/web3/` — Miden React hooks for account, assets etc.
+- `/hooks/server/` — Server React hooks for with tanstack query
 - `/components/` — UI components
+- `/services/utils/` — Utility functions for account, note, faucet, and more.
+- `/services/store/` — Global state management
+- `/services/api/` — Backend server api endpoints
 
 ---
 
