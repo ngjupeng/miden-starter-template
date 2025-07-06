@@ -23,9 +23,6 @@ importers:
       '@demox-labs/miden-wallet-adapter-trident':
         specifier: ^0.1.2
         version: 0.1.5
-      '@types/axios':
-        specifier: ^0.14.4
-        version: 0.14.4
       axios:
         specifier: ^1.9.0
         version: 1.10.0
@@ -474,10 +471,6 @@ packages:
 
   '@tailwindcss/postcss@4.1.10':
     resolution: {integrity: sha512-B+7r7ABZbkXJwpvt2VMnS6ujcDoR2OOcFaqrLIo1xbcdxje4Vf+VgJdBzNNbrAjBj/rLZ66/tlQ1knIGNLKOBQ==}
-
-  '@types/axios@0.14.4':
-    resolution: {integrity: sha512-9JgOaunvQdsQ/qW2OPmE5+hCeUB52lQSolecrFrthct55QekhmXEwT203s20RL+UHtCQc15y3VXpby9E7Kkh/g==}
-    deprecated: This is a stub types definition. axios provides its own type definitions, so you do not need this installed.
 
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
@@ -1664,12 +1657,6 @@ snapshots:
       '@tailwindcss/oxide': 4.1.10
       postcss: 8.5.6
       tailwindcss: 4.1.10
-
-  '@types/axios@0.14.4':
-    dependencies:
-      axios: 1.10.0
-    transitivePeerDependencies:
-      - debug
 
   '@types/estree@1.0.8': {}
 
