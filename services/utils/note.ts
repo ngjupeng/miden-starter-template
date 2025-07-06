@@ -1,5 +1,5 @@
 import { AccountId, NoteType } from "@demox-labs/miden-sdk";
-import { useClient } from "../hooks/useClient";
+import { useClient } from "../../hooks/web3/useClient";
 
 export async function createP2IDNote(
   sender: AccountId,

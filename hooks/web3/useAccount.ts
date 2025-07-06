@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import { useClient } from "./useClient";
+import { useClient } from "../useClient";
 import {
   AccountId,
   ConsumableNoteRecord,
   FungibleAsset,
 } from "@demox-labs/miden-sdk";
-import { getConsumableNotes } from "../utils/note";
+import { getConsumableNotes } from "../../services/utils/note";
 
 export interface Asset {
   tokenAddress: string;

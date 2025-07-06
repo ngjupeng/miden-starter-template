@@ -1,6 +1,8 @@
 import { Account, TransactionResult } from "@demox-labs/miden-sdk";
-import { useClient } from "../hooks/useClient";
+import { useClient } from "../../hooks/web3/useClient";
 
+/// @param symbol can't exceed 6 characters
+/// @param decimals can't exceed 12
 export async function deployFaucet(
   symbol: string,
   decimals: number,

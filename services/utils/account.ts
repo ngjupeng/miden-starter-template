@@ -1,4 +1,4 @@
-import { useClient } from "../hooks/useClient";
+import { useClient } from "../../hooks/web3/useClient";
 
 export async function deployAccount(isPublic: boolean) {
   const { getClient } = useClient();

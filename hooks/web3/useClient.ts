@@ -1,4 +1,4 @@
-import { nodeEndpoint } from "@/app/utils/constant";
+import { nodeEndpoint } from "@/services/utils/constant";
 import { WebClient } from "@demox-labs/miden-sdk";
 
 let client: any = null;

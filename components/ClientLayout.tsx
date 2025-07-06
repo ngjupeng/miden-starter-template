@@ -8,12 +8,14 @@ import toast, { Toaster } from "react-hot-toast";
 import { WalletError } from "@demox-labs/miden-wallet-adapter-base";
 import ConnectWalletButton from "./ConnectWallet/ConnectWalletButton";
 import "@demox-labs/miden-wallet-adapter-reactui/styles.css";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 interface ClientLayoutProps {
   children: ReactNode;
 }
 
 export default function ClientLayout({ children }: ClientLayoutProps) {
+  const queryClient = new QueryClient();
   const wallets = useMemo(
     () => [
       new TridentWalletAdapter({
@@ -36,12 +38,14 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
   };
 
   return (
-    <WalletProvider wallets={wallets} autoConnect onError={handleError}>
-      <WalletModalProvider>
-        <Toaster />
-        <ConnectWalletButton />
-        {children}
-      </WalletModalProvider>
-    </WalletProvider>
+    <QueryClientProvider client={queryClient}>
+      <WalletProvider wallets={wallets} autoConnect onError={handleError}>
+        <WalletModalProvider>
+          <Toaster />
+          <ConnectWalletButton />
+          {children}
+        </WalletModalProvider>
+      </WalletProvider>
+    </QueryClientProvider>
   );
 }
