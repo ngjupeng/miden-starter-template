@@ -1,4 +1,4 @@
-# Miden Dev Toolkit Starter
+# Miden Starter Template
 
 A starter template for building dApps on the [Miden](https://miden.xyz/) blockchain.
 
