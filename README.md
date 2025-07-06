@@ -23,8 +23,8 @@ A starter template for building dApps on the [Miden](https://miden.xyz/) blockch
 
 ## Project Structure
 
-- `app/hooks/` — React hooks for account, assets, minting, batch transfer, etc.
-- `app/utils/` — Utility functions for account, note, faucet, and constants.
+- `app/hooks/` — React hooks for account, assets etc.
+- `app/utils/` — Utility functions for account, note, faucet, and more.
 - `app/components/` — UI components
 
 ---
