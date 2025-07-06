@@ -23,9 +23,9 @@ A starter template for building dApps on the [Miden](https://miden.xyz/) blockch
 
 ## Project Structure
 
-- `app/hooks/` — React hooks for account, assets etc.
-- `app/utils/` — Utility functions for account, note, faucet, and more.
-- `app/components/` — UI components
+- `/hooks/` — React hooks for account, assets etc.
+- `/utils/` — Utility functions for account, note, faucet, and more.
+- `/components/` — UI components
 
 ---
 
@@ -63,19 +63,19 @@ const { getClient } = useClient();
 
 ## Utilities
 
-### `app/utils/account.ts`
+### `/services/utils/account.ts`
 
 - `deployAccount(isPublic: boolean)` — Deploy a new account (public/private)
 - _(Planned: `activateAccount` for account activation via faucet and minting)_
 
-### `app/utils/note.ts`
+### `/services/utils/note.ts`
 
 - `getConsumableNotes(accountId: string)` — Fetch all consumable notes for an account
 - `consumeAllNotes(accountId: string, noteIds: string[])` — Consume all notes for an account
 - `createP2IDNote(...)` — Build a P2ID note for transfers
 - `createP2IDRNote(...)` - Build a P2IDR note for transfers
 
-### `app/utils/faucet.ts`
+### `/services/utils/faucet.ts`
 
 - `deployFaucet(symbol, decimals, maxSupply)` — Deploy a new faucet
 - `mintToken(accountId, faucetId, amount)` — Mint tokens from a faucet to an account
