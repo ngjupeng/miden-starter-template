@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useClient } from "../useClient";
+import { useClient } from "./useClient";
 import {
   AccountId,
   ConsumableNoteRecord,
