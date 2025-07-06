@@ -1,29 +1,35 @@
 # Miden Dev Toolkit Starter
 
-A modern starter template for building dApps on the [Miden](https://miden.org/) blockchain. This project provides wallet integration, asset management, and a suite of ready-to-use React hooks and utilities to accelerate your development.
+A starter template for building dApps on the [Miden](https://miden.xyz/) blockchain.
 
 ---
 
-## 🚀 Features
+## Quick Start
 
-- **Wallet integration** (Trident Wallet, Miden Wallet Adapter)
-- **Account and asset management**
-- **Token minting, batch transfer, faucet deployment**
-- **Consumable notes utilities**
-- **Production-ready Next.js + Tailwind CSS setup**
+1. Git clone `https://github.com/ngjupeng/miden-starter-template.git`
+2. **Install dependencies:**
+
+   ```bash
+   pnpm install
+
+   ```
+
+3. **Run the dev server:**
+   ```bash
+   pnpm run dev
+   ```
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 - `app/hooks/` — React hooks for account, assets, minting, batch transfer, etc.
 - `app/utils/` — Utility functions for account, note, faucet, and constants.
-- `app/components/` — UI components (wallet connect, layout, etc.)
-- `lib/` — (Legacy, can be removed if not used)
+- `app/components/` — UI components
 
 ---
 
-## 🧩 Available Hooks
+## Available Hooks
 
 ### `useAccount()`
 
@@ -37,7 +43,7 @@ const {
   error,
   isAccountDeployed,
   accountId,
-} = useAccount();
+} = useAccount(accountId);
 ```
 
 - `assets`: List of fungible assets for the account
@@ -55,7 +61,7 @@ const { getClient } = useClient();
 
 ---
 
-## 🛠️ Utilities
+## Utilities
 
 ### `app/utils/account.ts`
 
@@ -66,7 +72,8 @@ const { getClient } = useClient();
 
 - `getConsumableNotes(accountId: string)` — Fetch all consumable notes for an account
 - `consumeAllNotes(accountId: string, noteIds: string[])` — Consume all notes for an account
-- `buildP2IDNote(...)` — Build a P2ID note for transfers
+- `createP2IDNote(...)` — Build a P2ID note for transfers
+- `createP2IDRNote(...)` - Build a P2IDR note for transfers
 
 ### `app/utils/faucet.ts`
 
@@ -75,43 +82,16 @@ const { getClient } = useClient();
 
 ---
 
-## 🏁 Getting Started
-
-1. **Install dependencies:**
-   ```bash
-   pnpm install
-   # or
-   npm install
-   ```
-2. **Run the dev server:**
-   ```bash
-   pnpm dev
-   # or
-   npm run dev
-   ```
-3. **Connect your wallet** using the button in the top right.
-4. **Explore the hooks and utilities** to build your dApp!
-
----
-
-## 📝 Notes & Limitations
+## Limitations
 
 > **Note:**
 > Currently, there is an issue with consuming transactions directly from the wallet extension. As a workaround, deploying a new account is the recommended solution for activating accounts and managing assets. This may change as the Miden wallet ecosystem evolves.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Pull requests and issues are welcome! Please open an issue if you find a bug or have a feature request.
-
----
-
-## 📚 Resources
-
-- [Miden Docs](https://miden.org/docs/)
-- [Miden Wallet Adapter](https://github.com/demox-labs/miden-wallet-adapter)
-- [Trident Wallet](https://trident.miden.org/)
 
 ---
 
